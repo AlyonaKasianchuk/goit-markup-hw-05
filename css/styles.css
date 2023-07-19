@@ -550,7 +550,7 @@ padding-left: 16px;
 }
 .subscribe-btn {
     display: flex;
-    min-width: 165;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     justify-content: center;
@@ -567,6 +567,15 @@ padding-left: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    font-family: Roboto, sans-serif;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover {
+    background-color: var(--green);
+}
+
+.subscribe-btnfocus {
+    background-color: var(--green);
 }
 .subscribe-icon {
 margin-left: 16px;
@@ -761,6 +770,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close-button:is(:hover, :focus) .close-button-icon {
 fill: #ffffff;
 }
+.div-modal {
+    margin-bottom: 8px;
+}
 .title-modal {
     color: var(--navyblue, #2E2F42);
     text-align: center;
@@ -860,4 +872,46 @@ border-radius: 2px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    cursor: pointer;
 }
+.input-checkbox:checked+.label-checkbox .span-chekbox  {
+background-color: var(--ocean);
+fill: var(--cloud);
+border: none;
+}
+.link-privacy {
+    color: var(--blue-brand-color);
+}
+.send-btn {
+    color: var(--white, #FFF);
+    font-family: "Roboto", sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: var(--blue-brand-color);
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.send-btn:active {
+    background-color: var(--ocean);
+}
+
+.send-btn:focus {
+    background-color: var(--ocean);
+}
+
+.send-btn:hover {
+    background-color: var(--ocean);
+}
+
+
